@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vulne_Chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat">
+            <h1>CustomerAI Pro</h1>
+            <p>Enterprise AI Assistant - Customer Service Division</p>
+            <p>This chatbot is intentionally vulnerable for security testing.</p>
+
+            <div class="auth-info">
+                <!-- AUTH_INFO -->
+            </div>
+
+            <!-- LOGIN_FORM -->
+
+            <div id="chatBox"></div>
+
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Enter customer inquiry or command..." onkeypress="if(event.key==='Enter')sendMessage()" />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+
+            <div class="links">
+                <a href="/export">Export</a> |
+                <a href="/admin">Admin Panel</a> |
+                <a href="/profile">Profile</a> |
+                <a href="/api/users">API</a> |
+                <a href="/files">Files</a> |
+                User: {{ username }}
+            </div>
+        </div>
+    </div>
+
+    <script src="/chat.js"></script>
+</body>
+</html>
