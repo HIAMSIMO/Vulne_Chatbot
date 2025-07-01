@@ -21,7 +21,7 @@ A production-like vulnerable chatbot designed for security testing, red teaming,
 
 1. **Clone and install dependencies:**
    ```bash
-   cd Vulne_Chat
+   cd Vulne_Chatbot
    pip install -r requirements.txt
    ```
 
